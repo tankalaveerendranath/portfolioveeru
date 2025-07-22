@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
         <div className="oo  md:w-1/2 flex justify-center animate-slideIn animation-delay-300">
           <div className="kop relative w-90 h-96 md:w-[500px] md:h-[550px] rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl">
             <img 
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=500&h=550&dpr=2" 
+              src="lo.jpg" 
               alt="Veerendranath" 
               className="pol lop w-full h-full object-cover"
             />
