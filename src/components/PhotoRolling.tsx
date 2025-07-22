@@ -4,38 +4,38 @@ const PhotoRolling: React.FC = () => {
   const photos = [
     {
       id: 1,
-      url: 'image copy 3.png',
-      alt: 'Modern workspace setup'
+      url: 'https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
+      alt: 'Web Development Certificate'
     },
     {
       id: 2,
-      url: 'image copy.png',
-      alt: 'Code on laptop screen'
+      url: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
+      alt: 'Programming Certificate'
     },
     {
       id: 3,
-      url: 'image.png',
-      alt: 'Creative design workspace'
+      url: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
+      alt: 'Design Certificate'
     },
     {
       id: 4,
-      url: 'image copy 2.png',
-      alt: 'Team collaboration'
+      url: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
+      alt: 'Full Stack Development Certificate'
     },
     {
       id: 5,
-      url: 'image copy 4.png',
-      alt: 'Mobile app development'
+      url: 'https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
+      alt: 'JavaScript Certificate'
     },
     {
       id: 6,
-      url: 'image copy 5.png',
-      alt: 'Mobile app development'
+      url: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
+      alt: 'React Certificate'
     },
     {
       id: 7,
-      url: 'io.png',
-      alt: 'Technology and creativity'
+      url: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
+      alt: 'Node.js Certificate'
     }
   ];
 
@@ -70,12 +70,12 @@ const PhotoRolling: React.FC = () => {
             {photos.map((photo) => (
               <div
                 key={photo.id}
-                className="flex-shrink-0 w-[800px] h-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+                className="flex-shrink-0 w-96 h-72 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <img
                   src={photo.url}
                   alt={photo.alt}
-                  className="w-900 h-900 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
             ))}

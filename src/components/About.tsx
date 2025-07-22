@@ -55,7 +55,7 @@ const About: React.FC = () => {
               <div className="absolute inset-0 rounded-2xl bg-blue-600 transform rotate-6"></div>
               <div className="mnb absolute inset-0 rounded-2xl overflow-hidden">
                 <img 
-                  src="l.png" 
+                  src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2" 
                   alt="About" 
                   className="mn w-full h-full object-cover"
                 />
