@@ -21,23 +21,23 @@ const Footer: React.FC = () => {
           <div className="kt sm:pl-0 md:pl-16">
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Links</h3>
             <ul className="space-y-1 sm:space-y-2">
-              <li><a href="#home" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Home</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">About</a></li>
-              <li><a href="#skills" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Skills</a></li>
-              <li><a href="#experience" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Experience</a></li>
-              <li><a href="#projects" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Projects</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Contact</a></li>
+              <li><a href="#home" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Home</a></li>
+              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> About</a></li>
+              <li><a href="#skills" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Skills</a></li>
+              <li><a href="#experience" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Experience</a></li>
+              <li><a href="#projects" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Projects</a></li>
+              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Contact</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Services</h3>
             <ul className="space-y-1 sm:space-y-2">
-              <li><span className="text-gray-400 text-sm sm:text-base">Web Design</span></li>
-              <li><span className="text-gray-400 text-sm sm:text-base">Web Development</span></li>
-              <li><span className="text-gray-400 text-sm sm:text-base">Full Stack Development</span></li>
-              <li><span className="text-gray-400 text-sm sm:text-base">Data Analysis</span></li>
-              <li><span className="text-gray-400 text-sm sm:text-base">Graphic Design</span></li>
+              <li><span className="text-gray-400 text-sm sm:text-base">> Web Design</span></li>
+              <li><span className="text-gray-400 text-sm sm:text-base">> Web Development</span></li>
+              <li><span className="text-gray-400 text-sm sm:text-base">> Full Stack Development</span></li>
+              <li><span className="text-gray-400 text-sm sm:text-base">> Data Analysis</span></li>
+              <li><span className="text-gray-400 text-sm sm:text-base">> Graphic Design</span></li>
             </ul>
           </div>
           

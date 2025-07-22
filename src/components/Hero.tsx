@@ -1,87 +1,74 @@
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Instagram } from 'lucide-react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 
-const Hero: React.FC = () => {
+const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-black/20"></div>
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 lg:pt-32 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between min-h-[calc(100vh-8rem)]">
-          
-          {/* Text Content */}
-          <div className="flex-1 text-center lg:text-left mb-8 lg:mb-0 lg:pr-8">
-            <div className="animate-fadeIn">
-              <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-                Hi, I'm{' '}
-                <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Veerendranath
-                </span>
-              </h1>
-              
-              <p className="text-lg xs:text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-6 sm:mb-8 animate-fadeIn animation-delay-200">
-                Full Stack Developer & Data Analyst
-              </p>
-              
-              <p className="text-sm xs:text-base sm:text-lg lg:text-xl text-gray-400 mb-8 sm:mb-10 max-w-2xl mx-auto lg:mx-0 animate-fadeIn animation-delay-300">
-                Passionate about creating innovative web solutions and turning data into actionable insights. 
-                Let's build something amazing together.
-              </p>
-              
-              <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 sm:mb-8 animate-fadeIn animation-delay-400">
-                <a 
-                  href="#projects"
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base"
-                >
-                  View My Work
-                </a>
-                <a 
-                  href="#contact"
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold rounded-lg transition-all duration-300 text-sm sm:text-base"
-                >
-                  Get In Touch
-                </a>
-              </div>
-              
-              <div className="flex items-center justify-center lg:justify-start space-x-4 sm:space-x-6 animate-fadeIn animation-delay-500">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 sm:p-3 text-white hover:text-blue-400 transition-colors transform hover:scale-110">
-                  <Github size={20} className="sm:w-6 sm:h-6" />
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 sm:p-3 text-white hover:text-blue-400 transition-colors transform hover:scale-110">
-                  <Linkedin size={20} className="sm:w-6 sm:h-6" />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 sm:p-3 text-white hover:text-blue-400 transition-colors transform hover:scale-110">
-                  <Instagram size={20} className="sm:w-6 sm:h-6" />
-                </a>
-              </div>
-            </div>
+    <footer className="bg-gray-900 dark:bg-gray-950 text-white py-8 sm:py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-4 sm:pb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div>
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Let's talk about</h3>
+            <p className="text-gray-400 mb-3 sm:mb-4 text-sm sm:text-base">
+             Designed and developed with modern web technologies. Feel free to connect for collaboration, opportunities, or feedback.
+            </p>
+            <button className="px-4 sm:px-6 py-2 bg-emerald-400 hover:bg-emerald-500 text-gray-900 rounded-md transition-colors text-sm sm:text-base">
+              Learn more
+            </button>
           </div>
           
-          {/* Profile Image */}
-          <div className="flex-shrink-0 animate-fadeIn animation-delay-600">
-            <div className="relative w-64 h-80 xs:w-72 xs:h-96 sm:w-80 sm:h-[480px] lg:w-96 lg:h-[500px] xl:w-[400px] xl:h-[520px] rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl transform hover:scale-105 transition-transform duration-300">
-              <img 
-                src="/lo.jpg" 
-                alt="Veerendranath Tanakala" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+          <div className="sm:pl-8 lg:pl-16">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">&gt; Home</a></li>
+              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">&gt; About</a></li>
+              <li><a href="#skills" className="text-gray-400 hover:text-white transition-colors">&gt; Skills</a></li>
+              <li><a href="#experience" className="text-gray-400 hover:text-white transition-colors">&gt; Experience</a></li>
+              <li><a href="#projects" className="text-gray-400 hover:text-white transition-colors">&gt; Projects</a></li>
+              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">&gt; Contact</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-bold mb-4">Services</h3>
+            <ul className="space-y-2">
+              <li><span className="text-gray-400">&gt; Web Design</span></li>
+              <li><span className="text-gray-400">&gt; Web Development</span></li>
+              <li><span className="text-gray-400">&gt; Full Stack Development</span></li>
+              <li><a href="#home" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Home</a></li>
+              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> About</a></li>
+              <li><a href="#skills" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Skills</a></li>
+              <li><a href="#experience" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Experience</a></li>
+              <li><a href="#projects" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">> Projects</a></li>
+            <h3 className="text-xl font-bold mb-4">Have a Question?</h3>
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-transparent border-2 border-white text-white hover:bg-white/10 font-medium rounded-lg transition-colors text-center text-sm sm:text-base"
+              <p className="mb-2">Sujatha Nagar, Pendurthi, Visakhapatnam</p>
+              <p className="mb-2">+91 93900-83562</p>
+              <p className="mb-4">veerendranathtanakala05@gmail.com</p>
+            </address>
+            <div className="flex space-x-4">
+          <div className="flex items-center justify-center lg:justify-start space-x-3 sm:space-x-4 pt-2 sm:pt-4 animate-fadeIn animation-delay-400">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 text-white hover:text-white/80 transition-colors">
+              <Github size={18} className="sm:w-5 sm:h-5" />
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Github size={20} />
+              <Linkedin size={18} className="sm:w-5 sm:h-5" />
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Instagram size={20} />
+          <div className="kop relative w-48 h-60 xs:w-56 xs:h-72 sm:w-64 sm:h-80 md:w-80 md:h-96 lg:w-[350px] lg:h-[450px] xl:w-[400px] xl:h-[500px] rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl">
             </div>
           </div>
         </div>
-        
-        {/* Scroll Down Arrow */}
-        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <a 
-            href="#about"
-            className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm rounded-full shadow-md text-white hover:text-white/80 transition-colors"
-          >
-            <ArrowDown size={20} className="sm:w-6 sm:h-6" />
-          </a>
-        </div>
+        <br />
+        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+          <p>© {currentYear} All rights reserved | Created By Veerendranath Tanakala</p>
+        <ArrowDown size={20} className="sm:w-6 sm:h-6" />
       </div>
-    </section>
+    </footer>
   );
 };
-
-export default Hero;
+        className="absolute bottom-2 sm:bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce p-2 bg-white/10 backdrop-blur-sm rounded-full shadow-md text-white hover:text-white/80 transition-colors"
+export default Footer;
+  )
+}
