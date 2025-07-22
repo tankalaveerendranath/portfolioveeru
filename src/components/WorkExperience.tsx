@@ -63,37 +63,37 @@ const experienceData: Experience[] = [
 
 const WorkExperience: React.FC = () => {
   return (
-    <section id="experience" className="py-20  transition-colors">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+    <section id="experience" className="py-12 sm:py-16 lg:py-20 transition-colors">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Work Experience
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
             My professional journey in web development, showcasing the roles and responsibilities 
             that have shaped my expertise in building modern web applications.
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-0">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-blue-200 dark:bg-blue-800"></div>
+            <div className="absolute left-6 sm:left-8 lg:left-1/2 transform lg:-translate-x-1/2 w-0.5 h-full bg-blue-200 dark:bg-blue-800"></div>
             
             {experienceData.map((experience, index) => (
-              <div key={experience.id} className={`relative mb-12 ${index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2 md:ml-auto'}`}>
+              <div key={experience.id} className={`relative mb-8 sm:mb-12 ${index % 2 === 0 ? 'lg:pr-1/2' : 'lg:pl-1/2 lg:ml-auto'}`}>
                 {/* Timeline dot */}
-                <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-blue-600 dark:bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 shadow-md"></div>
+                <div className="absolute left-4 sm:left-6 lg:left-1/2 transform lg:-translate-x-1/2 w-4 h-4 bg-blue-600 dark:bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 shadow-md"></div>
                 
-                <div className={`ml-16 md:ml-0 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
-                  <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                <div className={`ml-12 sm:ml-16 lg:ml-0 ${index % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}>
+                  <div className="bg-white dark:bg-gray-800 rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                       <div>
-                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                        <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-1">
                           {experience.position}
                         </h3>
                         <div className="flex items-center text-blue-600 dark:text-blue-400 mb-2">
-                          <span className="font-semibold">{experience.company}</span>
+                          <span className="font-semibold text-sm sm:text-base">{experience.company}</span>
                           {experience.website && (
                             <a 
                               href={experience.website} 
@@ -106,7 +106,7 @@ const WorkExperience: React.FC = () => {
                           )}
                         </div>
                       </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">
+                      <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-2 lg:mt-0">
                         <div className="flex items-center mb-1">
                           <Calendar size={16} className="mr-2" />
                           {experience.duration}
@@ -118,7 +118,7 @@ const WorkExperience: React.FC = () => {
                       </div>
                     </div>
                     
-                    <ul className="text-gray-700 dark:text-gray-300 mb-4 space-y-2">
+                    <ul className="text-gray-700 dark:text-gray-300 mb-4 space-y-2 text-sm sm:text-base">
                       {experience.description.map((item, idx) => (
                         <li key={idx} className="flex items-start">
                           <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -131,7 +131,7 @@ const WorkExperience: React.FC = () => {
                       {experience.technologies.map((tech, idx) => (
                         <span 
                           key={idx}
-                          className="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full"
+                          className="px-2 sm:px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full"
                         >
                           {tech}
                         </span>

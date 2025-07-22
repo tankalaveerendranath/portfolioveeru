@@ -74,15 +74,15 @@ const Projects: React.FC = () => {
     : projectsData.filter(project => project.category === filter);
 
   return (
-    <section id="projects" className="hi py-20 bg-white dark:bg-gray-900 transition-colors">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+    <section id="projects" className="py-12 sm:py-16 lg:py-20 bg-white dark:bg-gray-900 transition-colors">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
             A selection of my recent work, showcasing my skills in web development and design.
           </p>
           
-          <div className="flex flex-wrap justify-center gap-2 mt-8">
+          <div className="flex flex-wrap justify-center gap-2 mt-6 sm:mt-8">
             <button 
               onClick={() => setFilter('all')} 
               className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
@@ -110,7 +110,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredProjects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}

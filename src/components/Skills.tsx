@@ -32,20 +32,20 @@ const Skills: React.FC = () => {
   const otherSkills = skillsData.filter(skill => skill.category === 'other');
   
   return (
-    <section id="skills" className="py-20  transition-colors">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+    <section id="skills" className="py-12 sm:py-16 lg:py-20 transition-colors">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             My Skills
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
             Here are some of the technologies and tools I work with to bring ideas to life.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Frontend Development</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-6 shadow-md">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">Frontend Development</h3>
             <div className="space-y-4">
               {frontendSkills.map((skill, index) => (
                 <SkillBar key={index} skill={skill} />
@@ -53,8 +53,8 @@ const Skills: React.FC = () => {
             </div>
           </div>
           
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Backend Development</h3>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-6 shadow-md">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">Backend Development</h3>
             <div className="space-y-4">
               {backendSkills.map((skill, index) => (
                 <SkillBar key={index} skill={skill} />
@@ -62,8 +62,8 @@ const Skills: React.FC = () => {
             </div>
           </div>
           
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Design</h3>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-6 shadow-md">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">Design</h3>
             <div className="space-y-4">
               {designSkills.map((skill, index) => (
                 <SkillBar key={index} skill={skill} />
@@ -71,8 +71,8 @@ const Skills: React.FC = () => {
             </div>
           </div>
           
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Other Skills</h3>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-6 shadow-md">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">Other Skills</h3>
             <div className="space-y-4">
               {otherSkills.map((skill, index) => (
                 <SkillBar key={index} skill={skill} />
@@ -93,8 +93,8 @@ const SkillBar: React.FC<SkillBarProps> = ({ skill }) => {
   return (
     <div>
       <div className="flex justify-between mb-1">
-        <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
-        <span className="text-gray-600 dark:text-gray-400">{skill.level}%</span>
+        <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">{skill.name}</span>
+        <span className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">{skill.level}%</span>
       </div>
       <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
         <div 
