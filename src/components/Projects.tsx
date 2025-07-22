@@ -74,43 +74,43 @@ const Projects: React.FC = () => {
     : projectsData.filter(project => project.category === filter);
 
   return (
-    <section id="projects" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white dark:bg-gray-900 transition-colors">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6 sm:mb-8 md:mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">My Projects</h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base px-4 sm:px-0">
+    <section id="projects" className="hi py-20 bg-white dark:bg-gray-900 transition-colors">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             A selection of my recent work, showcasing my skills in web development and design.
           </p>
           
-          <div className="flex flex-wrap justify-center gap-2 mt-4 sm:mt-6 md:mt-8 px-4 sm:px-0">
+          <div className="flex flex-wrap justify-center gap-2 mt-8">
             <button 
               onClick={() => setFilter('all')} 
-              className={`filter-btn text-xs sm:text-sm ${filter === 'all' ? 'active' : ''}`}
+              className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
             >
               All
             </button>
             <button 
               onClick={() => setFilter('frontend')} 
-              className={`filter-btn text-xs sm:text-sm ${filter === 'frontend' ? 'active' : ''}`}
+              className={`filter-btn ${filter === 'frontend' ? 'active' : ''}`}
             >
               Frontend
             </button>
             <button 
               onClick={() => setFilter('backend')} 
-              className={`filter-btn text-xs sm:text-sm ${filter === 'backend' ? 'active' : ''}`}
+              className={`filter-btn ${filter === 'backend' ? 'active' : ''}`}
             >
               Backend
             </button>
             <button 
               onClick={() => setFilter('fullstack')} 
-              className={`filter-btn text-xs sm:text-sm ${filter === 'fullstack' ? 'active' : ''}`}
+              className={`filter-btn ${filter === 'fullstack' ? 'active' : ''}`}
             >
               Full Stack
             </button>
           </div>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}
