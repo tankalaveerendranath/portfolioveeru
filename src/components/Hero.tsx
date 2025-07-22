@@ -70,3 +70,5 @@ const Footer: React.FC = () => {
 };
         className="absolute bottom-2 sm:bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce p-2 bg-white/10 backdrop-blur-sm rounded-full shadow-md text-white hover:text-white/80 transition-colors"
 export default Footer;
+  )
+}
