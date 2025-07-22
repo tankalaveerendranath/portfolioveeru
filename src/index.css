@@ -128,36 +128,91 @@
 }
 
 .kt{
-  padding-left:70px;
+  padding-left:0px;
+}
+
+@media (min-width: 768px) {
+  .kt {
+    padding-left: 70px;
+  }
 }
 
 .kk{
-  padding-top:50px;
+  padding-top:20px;
   padding-bottom:10px;
 }
-.kl{
-  padding-top:30px;
+
+@media (min-width: 640px) {
+  .kk {
+    padding-top: 30px;
+  }
 }
+
+@media (min-width: 768px) {
+  .kk {
+    padding-top: 50px;
+  }
+}
+
+.kl{
+  padding-top:10px;
+}
+
+@media (min-width: 640px) {
+  .kl {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .kl {
+    padding-top: 30px;
+  }
+}
+
 .pp{
   color:blue;
 }
+
 .oo{
   padding-bottom:50px;
 }
+
 .bn{
   color:black;
   font-size:18px;
 }
+
+@media (max-width: 767px) {
+  .bn {
+    font-size: 16px;
+  }
+}
+
 .bn:hover{
   color:blue;
 }
+
 .lop{
   height:550px;
   width:500px;
   border-radius: 100px;
 }
+
 .kop{
   border-radius: 250px;
+}
+
+@media (max-width: 639px) {
+  .kop {
+    border-radius: 150px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .kop {
+    border-radius: 200px;
+  }
 }
 
 /* Enhanced backdrop effects */
