@@ -42,7 +42,7 @@ const About: React.FC = () => {
             </div>
             
             <a 
-              href="veer.pdf" 
+              href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" 
               className="inline-flex items-center px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-md hover:shadow-lg"
             >
               <Download size={18}  className="mr-2" />
@@ -55,7 +55,7 @@ const About: React.FC = () => {
               <div className="absolute inset-0 rounded-2xl bg-blue-600 transform rotate-6"></div>
               <div className="mnb absolute inset-0 rounded-2xl overflow-hidden">
                 <img 
-                  src="l.png" 
+                  src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=320&h=320&dpr=2" 
                   alt="About" 
                   className="mn w-full h-full object-cover"
                 />

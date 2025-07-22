@@ -4,37 +4,37 @@ const PhotoRolling: React.FC = () => {
   const photos = [
     {
       id: 1,
-      url: 'image copy 3.png',
+      url: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
       alt: 'Modern workspace setup'
     },
     {
       id: 2,
-      url: 'image copy.png',
+      url: 'https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
       alt: 'Code on laptop screen'
     },
     {
       id: 3,
-      url: 'image.png',
+      url: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
       alt: 'Creative design workspace'
     },
     {
       id: 4,
-      url: 'image copy 2.png',
+      url: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
       alt: 'Team collaboration'
     },
     {
       id: 5,
-      url: 'image copy 4.png',
+      url: 'https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
       alt: 'Mobile app development'
     },
     {
       id: 6,
-      url: 'image copy 5.png',
+      url: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
       alt: 'Mobile app development'
     },
     {
       id: 7,
-      url: 'io.png',
+      url: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2',
       alt: 'Technology and creativity'
     }
   ];
